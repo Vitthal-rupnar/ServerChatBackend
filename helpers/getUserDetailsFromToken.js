@@ -18,3 +18,6 @@ const getUserDetailsFromToken = async(token)=>{
 }
 
 module.exports = getUserDetailsFromToken
+
+
+
