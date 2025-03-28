@@ -9,9 +9,12 @@ const { app, server } = require('./socket/index')
 
 // const app = express()
 app.use(cors({
-    origin : process.env.FRONTEND_URL,
-    credentials : true
-}))
+    origin: process.env.FRONTEND_URL,
+    credentials: true
+}));
+
+console.log("CORS for Express: ", process.env.FRONTEND_URL);
+
 app.use(express.json());
 app.use(cookiesParser());
 app.use(express.urlencoded({ extended: true }));
